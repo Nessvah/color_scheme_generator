@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Scheme Generator</title>
+  </head>
+  <body>
+    <header class="request__container">
+      <form action="#" method="get" id="color-form">
+        <input type="color" name="color" id="color" />
+        <select name="mode" id="mode">
+          <option value="monochrome" selected>Monochrome</option>
+          <option value="monochrome-dark">Monochrome-Dark</option>
+          <option value="monochrome-lighT">Monochrome-Light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-Complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+        <button type="submit">Get color scheme</button>
+      </form>
+    </header>
+    <main class="color__info">
+      <section class="color-container" id="color-container"></section>
+      <section id="hex-container"></section>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>
