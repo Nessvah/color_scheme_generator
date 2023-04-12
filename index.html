@@ -3,12 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="style.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Color Scheme Generator</title>
   </head>
   <body>
     <header class="request__container">
+      <h1>Colorme</h1>
       <form action="#" method="get" id="color-form">
         <input type="color" name="color" id="color" />
         <select name="mode" id="mode">
@@ -24,10 +32,15 @@
         <button type="submit">Get color scheme</button>
       </form>
     </header>
-    <main class="color__info">
-      <section class="color-container" id="color-container"></section>
-      <section id="hex-container"></section>
-    </main>
+    <main class="color__info" id="color__grid"></main>
+    <footer>
+      <p>
+        Copyright 2023
+        <a href="http://" target="_blank" rel="noopener noreferrer"
+          >Sílvia Vanessa</a
+        >
+      </p>
+    </footer>
     <script src="/index.js"></script>
   </body>
 </html>
