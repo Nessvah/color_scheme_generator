@@ -71,12 +71,12 @@ button {
   background-color: #fff;
   font-family: inherit;
   cursor: pointer;
+  color: #000;
 }
 
 button {
   font-size: 1.2rem;
   padding: 1rem;
-  color: #000;
 }
 
 button:hover {
