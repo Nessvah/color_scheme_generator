@@ -57,6 +57,10 @@ form {
   justify-content: space-between;
 }
 
+input[type="color"] {
+  cursor: pointer;
+}
+
 select,
 button {
   padding: 0.9rem 0.6rem;
@@ -65,11 +69,16 @@ button {
   border-radius: 6px;
   background-color: #fff;
   font-family: inherit;
+  cursor: pointer;
 }
 
 button {
   font-size: 1.2rem;
   padding: 1rem;
+}
+
+button:hover {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .request__container {
@@ -99,4 +108,78 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: auto;
+  padding: 1rem;
+}
+
+a:link {
+  color: #f32170;
+  font-weight: 700;
+}
+
+a:visited {
+  color: #420b20;
+}
+
+a:hover,
+a:active {
+  color: hotpink;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 320px) {
+  /* Specific for samsung fold */
+
+  form {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+}
+
+@media (min-width: 576px) {
+  /* Styles for tablets / medium devices */
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  input[type="color"] {
+    width: 7rem;
+    height: 5rem;
+  }
+
+  select,
+  button {
+    height: 5rem;
+    font-size: inherit;
+  }
+
+  .color__code {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Styles for large devices */
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  form {
+    justify-content: space-around;
+  }
+
+  .request__container {
+    margin: 2.4rem 1.4rem 5rem;
+  }
+
+  select,
+  button {
+    font-size: 1.6rem;
+  }
+
+  .color__code {
+    font-size: 1.5rem;
+  }
 }

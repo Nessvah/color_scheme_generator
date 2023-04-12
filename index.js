@@ -41,9 +41,7 @@ form.addEventListener("submit", (e) => {
       colorInfo.forEach((color) => {
         const el2 = document.createElement("div");
         el2.classList.add("color__code");
-
         el2.innerHTML = color;
-
         el2.addEventListener("dblclick", function () {
           navigator.clipboard
             .writeText(color)
@@ -67,15 +65,3 @@ function removePreviousChilds() {
     colorGrid.removeChild(colorGrid.firstChild);
   }
 }
-
-/* STRETCH GOALS - COPY HEX CODE TO CLIPBOARD */
-
-// let text = document.getElementById("1").innerHTML;
-// const copyContent = async () => {
-//   try {
-//     await navigator.clipboard.writeText(text);
-//     console.log("Content copied to clipboard");
-//   } catch (err) {
-//     console.error("Failed to copy: ", err);
-//   }
-// };
